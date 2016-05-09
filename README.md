@@ -1,14 +1,14 @@
-# XYZReader
-Project5-Udacity-XYZReader
-  - A mock RSS feed reader featuring banner photos and shocking headlines!
+# Go Ubiquitous
+Project6-Udacity-GoUbiquitous
+  - ABuilt a watch face for Android Wear so users can access Sunshine's weather information at a glance.
   
 #Execution Instructions
-Requires: Android Studio v1.5.0+
+Requires: Android Studio v1.5.0+, Handheld Mobile and Android Watch emulator
 
 Dependencies:
 -------------
 Min SDK Version: 10 (Gingerbread 2.3.3)
-Target SDK Version: 22 (Android lollipop)
+Target SDK Version: 23 (Android Marshmallow)
 Android Support Library v7 revision 22.1.1
 
 Building/Running the app:
@@ -46,31 +46,29 @@ The app will run on an Android emulator.
 The emulator will run much faster with hardware acceleration enabled.  Please see the [directions on using the Android emulator and enabling hardware acceleration](http://developer.android.com/tools/devices/emulator.html).  For Windows, this uses the HAXM emulator accelerator package available under 'Extras' in the SDK Manager.
 
 #### Running the app
-Set up an Android Wear Virtual Device
-
 To set up an Android Wear virtual device:
-Click Tools > Android > AVD Manager.
-Click Create Virtual Device....
-Click Wear in the Category list:
-Select Android Wear Square or Android Wear Round.
-Click Next.
-Select a release name (for example, KitKat Wear).
-Click Next.
+-  Click Tools > Android > AVD Manager.
+-  Click Create Virtual Device....
+-  Click Wear in the Category list:
+-  Select Android Wear Square or Android Wear Round.
+-  Click Next.
+-  Select a release name (for example, KitKat Wear).
+-  Click Next.
 (Optional) Change any preferences for your virtual device.
-Click Finish.
-Start the emulator:
-Select the virtual device you just created.
-Click the Play button.
-Wait until the emulator initializes and shows the Android Wear home screen.
-Pair your handheld with the emulator:
-On your handheld, install the Android Wear app from Google Play.
-Connect the handheld to your machine through USB.
-Forward the AVD's communication port to the connected handheld device (you must do this every time the handheld is connected):
+-  Click Finish.
+-  Start the emulator:
+-  Select the virtual device you just created.
+-  Click the Play button.
+-  Wait until the emulator initializes and shows the Android Wear home screen.
+-  Pair your handheld with the emulator:
+-  On your handheld, install the Android Wear app from Google Play.
+-  Connect the handheld to your machine through USB.
+-  Forward the AVD's communication port to the connected handheld device (you must do this every time the handheld is connected):
 adb -d forward tcp:5601 tcp:5601
-Sync your gradle build file if your IDE asks you to, and then run the app via Run -> Run.
-Start the Android Wear app on your handheld device and connect to the emulator.
-Tap the menu on the top right corner of the Android Wear app and select sunshinewatchface card.
-The cards you select appear as notifications on the home screen of the emulator.
+-  Sync your gradle build file if your IDE asks you to, and then run the app via Run -> Run.
+-  Start the Android Wear app on your handheld device and connect to the emulator.
+-  Tap the menu on the top right corner of the Android Wear app and select sunshinewatchface card.
+-  The cards you select appear as notifications on the home screen of the emulator.
 
 
 Troubleshooting Steps
